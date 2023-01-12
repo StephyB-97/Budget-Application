@@ -1,0 +1,224 @@
+*{
+    padding: 1px;
+    margin: 5px;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+}
+/*Header of main page */
+header{
+    padding: 1em 1em;
+    width: 100%;
+    font-size: 20px;
+    max-width: 43.75em;
+    margin: 0.5em auto;
+
+
+}
+
+/*center and gives the font style to the heading title of the program*/
+header h1{
+    text-align: center;
+    font-family:"Poppins", sans-serif;
+    color: #051923;
+}
+
+body{
+    background-color: #d9888b;
+}
+
+/*Everything is wrapped around the Wrapper class element */
+.wrapper{
+    width: 80%;
+    font-size: 18px;
+    max-width: 43.75em;
+    margin: 1em auto;
+
+}
+
+/*Second div in which everything is wrapped up*/
+.container{
+    width: 100%;
+
+}
+
+/*Third div in which everything is wrapped in. Used to make all the input section a grid*/
+.sub-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    gap: 2em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*All h3 inside the wrapper class*/
+.wrapper h3{
+    color: #12263a;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+/*All input inside the container class*/
+.container input{
+    display: block;
+    width: 90%;
+    padding: 0.7em 0.3em;
+    border: 1px solid #051923;
+    border-radius: 5em;
+    color: #051923;
+    outline:  none;
+    font-weight: 500;
+    margin-bottom: 0.9em;
+}
+
+/*changes the border color of the input elements when they are selected*/
+.container input:focus{
+    border: 2px solid #FEC5BB;
+}
+
+/*Make changes to boxes of input information*/
+.total-amount-container, .user-amount-container{
+    background-color: #ffdbdb;
+    padding: 1em 1em;
+    border-radius: 2em;
+    box-shadow: 0 0.3em 1.1em #FEC5BB;
+}
+
+/*Output container little box creation */
+.output-container{
+    background-color: #ffdbdb;
+    border-radius: 1.5em;
+    box-shadow: 0 0.3em 1.1em #FEC5BB;
+    margin: 1em 0;
+    padding: 0.7em;
+}
+
+/* creation of box wrapping the progress bar */
+.percentage-box{
+    background-color: #ffdbdb;
+    border-radius: 1.5em;
+    box-shadow: 0 0.3em 1.1em #FEC5BB;
+    margin: 1em 0;
+    padding: 2em;
+
+}
+
+
+/* titles of the total budget, expenses and balance section*/
+.output-container p{
+    font-weight: 500;
+    margin-bottom: 0.7em;
+}
+
+/*Title of the percentage box */
+.percentage-box p{
+    font-weight: 500;
+    margin-bottom: 0.7em;
+}
+
+/*Number inside the percentage budget spent box */
+.percentage-box span{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: #051923;
+}
+
+
+/*numbers of total budget, expenses and balance*/
+.output-container span{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: #051923;
+}
+
+/*submit button*/
+.submit{
+    font-size: 1em;
+    margin-top: 0.5em;
+    background-color: #f9edf4;
+    border: none;
+    outline: 0.5em;
+    border-radius: 0.3em;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+}
+
+/*Expenses List to show to the user*/
+.list{
+    background-color: #ffdbdb;
+    padding: 0.7em;
+    box-shadow: 0 0.3em 1.1em #FEC5BB;
+    border-radius: 1.5em;
+}
+.sublist-content{
+    width: 100%;
+    border-left: 0.3em solid #12263a;
+    margin-bottom: 0.6em;
+    padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+
+.product{
+    font-weight: 500;
+    color: #051923;
+}
+
+.amount{
+    color: #051923;
+    margin-left: 20%;
+}
+
+.icons-container{
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+
+.product-title{
+    margin-bottom: 1em;
+}
+
+.hide-error{
+    color: #023047;
+}
+
+.error{
+    color: #ba181b;
+}
+
+.edit{
+    margin-left: auto;
+}
+
+.edit, .delete{
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #587ef4;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        font-size: 14px;
+    }
+    .sub-container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+}
